@@ -14,7 +14,7 @@ class MyThread extends Thread {
         int count = 1;
         while(true){
             System.out.println(count++);
-        }
+        } 
     }
 }
 
