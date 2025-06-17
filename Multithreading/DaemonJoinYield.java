@@ -8,11 +8,11 @@ package Multithreading;
  * - This thread runs indefinitely unless explicitly stopped or interrupted.
  * - Use caution when running this thread as it may consume significant CPU resources.
  */
-class MyThread extends Thread {
+class MyThread1 extends Thread {
     public void run()
     {
         int count = 1;
-        while(true){
+        while(count <= 100){
             System.out.println(count++);
         } 
     }
@@ -37,7 +37,7 @@ public class DaemonJoinYield
      */
     public static void main(String[] args)
     {
-        MyThread t = new MyThread();
+        MyThread1 t = new MyThread1();
         t.setDaemon(true);
         t.start();
 

@@ -22,7 +22,7 @@
  */
 package Multithreading;
 
-class MyThread extends Thread {}
+class MyThread2 extends Thread {}
 
 
 public class DaemonJoinYield2 
@@ -40,7 +40,7 @@ public class DaemonJoinYield2
      */
     public static void main(String[] args) 
     {
-        MyThread t = new MyThread();
+        MyThread2 t = new MyThread2();
         t.setDaemon(true);
         t.start();
         Thread mainThread = Thread.currentThread();
@@ -49,6 +49,5 @@ public class DaemonJoinYield2
         }catch (Exception e){
             System.out.println("Exception: " + e);
         }
-        
     }
 }

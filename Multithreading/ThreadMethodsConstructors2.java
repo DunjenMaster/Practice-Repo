@@ -1,7 +1,7 @@
 package Multithreading;
 
 
-class MyThread extends Thread
+class MyThread3 extends Thread
 {
     /**
      * Constructor for the MyThread class.
@@ -10,10 +10,10 @@ class MyThread extends Thread
      *
      * @param name The name of the thread.
      */
-    public MyThread(String name)
+    public MyThread3(String name)
     {
         super(name);
-        setPriority(Thread.NORM_PRIORITY); // Beacuse MAX_PRIORITY is a static method that is why it is being called with the class name like Thread.Max_PRIORITY
+        setPriority(Thread.NORM_PRIORITY); // Because MAX_PRIORITY is a static method that is why it is being called with the class name like Thread.Max_PRIORITY
     }
 }
 
@@ -31,7 +31,7 @@ public class ThreadMethodsConstructors2
      */
     public static void main (String[] args) throws Exception
     {
-        MyThread t = new MyThread("My Name 2");
+        MyThread3 t = new MyThread3("My Name 2");
         //t.start();
         System.out.println("ID " + t.threadId());
         System.out.println("Name " + t.getName());
