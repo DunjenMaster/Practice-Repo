@@ -1,13 +1,13 @@
 package Multithreading;
 
-class MyThread extends Thread 
+class MyThread5 extends Thread
 {
     /**
      * Constructs a new thread with the specified name.
      *
      * @param name the name of the thread
      */
-    public MyThread(String name)
+    public MyThread5(String name)
     {
         super(name);
     }
@@ -63,7 +63,7 @@ public class SleepMethod
      */
     public static void main(String[] args) throws Exception
     {
-        MyThread t = new MyThread("My Thread 1");
+        MyThread5 t = new MyThread5("My Thread 1");
         t.start();
         t.interrupt();
     }
