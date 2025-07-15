@@ -1,23 +1,44 @@
 package Multithreading;
 
+/**
+ * Functional interface with a single abstract method.
+ */
 @FunctionalInterface
 interface check {
-    public void checkMethod(String str);
+    /**
+     * Abstract method to compare two strings.
+     *
+     * @param str1 The first string to compare.
+     * @param str2 The second string to compare.
+     * @return An integer result of the comparison.
+     */
+    public int checkMethod(String str1, String str2);
 }
 
+/**
+ * Demonstrates method references and functional interfaces in Java.
+ */
 public class MethodReference {
-// This is a method reference to the constructor of MethodReference class, this will print the string in uppercase. and be called as referenced inside main method.
-    public MethodReference(String s)
-    {
+
+    /**
+     * Constructor that prints the given string in uppercase.
+     *
+     * @param s The string to be converted to uppercase and printed.
+     */
+    public MethodReference(String s) {
         System.out.println(s.toUpperCase());
     }
 
-    public static void main(String[] args){
-// This is a method reference to the constructor of MethodReference class, this will print the string in uppercase.
-// Constructor is called with the help of new keyword and the interface is check is taking the reference of the constructor.
+    /**
+     * Main method to demonstrate the use of method references.
+     *
+     * @param args Command-line arguments (not used).
+     */
+    public static void main(String[] args) {
+        // Using method reference to bind String's compareTo method to the functional interface.
+        check ck = String::compareTo;
 
-        check ck = MethodReference::new;
-        ck.checkMethod("Hello, this is a method reference example!");
+        // Comparing two strings and printing the result.
+        System.out.println(ck.checkMethod("hello", "hello"));
     }
-
 }
