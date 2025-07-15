@@ -11,7 +11,7 @@ public class MethodReference {
     {
         StringBuffer sb = new StringBuffer(str);
         sb.reverse();
-        System.err.println(sb);
+        System.out.println(sb);
     }
 
 
