@@ -11,15 +11,16 @@ public class FileOutputStreamExample
         try
         {
 
-            FileOutputStream fos1 = new FileOutputStream("D:/Project/Udemy/AbdulBari/LearningPractices/InputOutputStream/resources/test1.txt");
+           try(FileOutputStream fos1 = new FileOutputStream("D:/Project/Udemy/AbdulBari/LearningPractices/InputOutputStream/resources/test1.txt");)
+            {
 
-            String str = "Learn Java Programming!";
+                String str = "Learn Java Programming!";
 
-            //Writing String to file using FileOutputStream byte by byte using offset !
-            byte b [] = str.getBytes();
+                //Writing String to file using FileOutputStream byte by byte using offset !
+                byte b[] = str.getBytes();
 
-            fos1.write(b, 6, str.length() - 6); // Write from index 6 to the end of the string
-            fos1.close();
+                fos1.write(b);
+            }
 
         }
 
