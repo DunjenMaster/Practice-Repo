@@ -1,11 +1,10 @@
-package InputOutputStream.OutputStreams;
+package InputOutputStream.InputStreams;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class FileOutputStreamExample2
+public class FileInputStreamExample
 {
     public static void main(String[] args)
     {
