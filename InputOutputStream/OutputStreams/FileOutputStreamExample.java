@@ -15,7 +15,11 @@ public class FileOutputStreamExample
 
             String str = "Learn Java Programming!";
 
-            fos1.write(str.getBytes());
+            //Writing String to file using FileOutputStream byte by byte!
+            byte b [] = str.getBytes();
+            for(byte x : b)
+                fos1.write(x);
+
             fos1.close();
 
         }
