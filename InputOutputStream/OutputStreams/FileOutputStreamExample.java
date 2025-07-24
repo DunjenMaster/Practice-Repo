@@ -15,11 +15,10 @@ public class FileOutputStreamExample
 
             String str = "Learn Java Programming!";
 
-            //Writing String to file using FileOutputStream byte by byte!
+            //Writing String to file using FileOutputStream byte by byte using offset !
             byte b [] = str.getBytes();
-            for(byte x : b)
-                fos1.write(x);
 
+            fos1.write(b, 6, str.length() - 6); // Write from index 6 to the end of the string
             fos1.close();
 
         }
