@@ -17,7 +17,7 @@ public class IteratorPractice {
 
 
         ListIterator<Integer> lt = al1.listIterator();
-        // Using List-Iterator with while loop to iterate through the ArrayList
+        // Using ListIteratorDemo2-Iterator with while loop to iterate through the ArrayList
         while(lt.hasNext())
         {
             lt.next();

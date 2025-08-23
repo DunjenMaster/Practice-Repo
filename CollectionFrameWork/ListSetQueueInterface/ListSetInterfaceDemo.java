@@ -1,6 +1,6 @@
 /*
-* List Interface extends Collection interface therefore it will have all the methods of collection plus extra method of it as it is ordered so indexing is there.
-* Below is the list of List Interface most commonly used methods:
+* ListIteratorDemo2 Interface extends Collection interface therefore it will have all the methods of collection plus extra method of it as it is ordered so indexing is there.
+* Below is the list of ListIteratorDemo2 Interface most commonly used methods:
 * 1. add(int index, E e)
 * 2. addAll(int index, Collection<E> e)
 * 3. remove(int index)
