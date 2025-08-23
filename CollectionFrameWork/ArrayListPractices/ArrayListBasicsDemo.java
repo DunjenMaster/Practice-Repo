@@ -2,7 +2,7 @@ package CollectionFrameWork.ArrayListPractices;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListDemo {
+public class ArrayListBasicsDemo {
     public static void main(String[] args) {
         ArrayList<Integer> al1 = new ArrayList<>(20);
         al1.add(21);

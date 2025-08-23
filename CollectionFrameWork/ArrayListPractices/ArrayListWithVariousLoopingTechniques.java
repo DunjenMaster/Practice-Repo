@@ -1,12 +1,11 @@
 package CollectionFrameWork.ArrayListPractices;
 
-import java.sql.SQLOutput;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ArrayList;
 
 
-public class ListIteratorDemo2 {
+public class ArrayListWithVariousLoopingTechniques {
 
     public static void main(String[] args){
 

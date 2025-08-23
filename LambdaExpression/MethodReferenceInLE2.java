@@ -10,7 +10,7 @@ public class MethodReferenceInLE2 {
     public static void reverseCheck(String str)
     {
         StringBuffer sb = new StringBuffer(str);
-        sb.reverse();
+        sb.reverse();e
         System.out.println(sb);
     }
 
