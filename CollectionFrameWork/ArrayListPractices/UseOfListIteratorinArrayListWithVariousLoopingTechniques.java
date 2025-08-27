@@ -23,7 +23,7 @@ public class UseOfListIteratorinArrayListWithVariousLoopingTechniques {
         ListIterator with For loop to traverse in the array list "arrayl" in forward direction.
         Note in the below for initialization we have used listIterator() method of the ArrayList class to get the ListIterator object.
         And condition is used to check if there is next element or not i.e hasNext().
-        There is no updation part in the for loop as the updation is done inside the loop using next() method.
+        There is no updation part in the for loop as the update is done inside the loop using next() method.
         */
         for(ListIterator<Integer> lit = arraylst.listIterator(); lit.hasNext();)
         {
