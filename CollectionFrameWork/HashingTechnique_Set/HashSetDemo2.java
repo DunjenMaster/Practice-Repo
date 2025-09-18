@@ -1,4 +1,4 @@
-package CollectionFrameWork.HashingTechnique;
+package CollectionFrameWork.HashingTechnique_Set;
 
 import java.util.HashSet;
 
