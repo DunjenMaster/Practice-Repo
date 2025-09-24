@@ -10,7 +10,7 @@ public class DeprecatedDateClass {
         Date date = new Date();
         System.out.println(date); // Current date and time
 
-        Date d = new Date("1/1/2020"); // Deprecated way to create a date
+        Date d = new Date("1/1/2020"); // Deprecated way to display date and time
         System.out.println(d);
 
         // Deprecated methods in Date class
