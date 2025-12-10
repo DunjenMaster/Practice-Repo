@@ -172,6 +172,14 @@ public class Methods {
         System.out.println(result15);
 
 
+        //convert numbers to String format
+        List<String> result16 =
+                num.stream()
+                        .map( n -> "Numbers: " + n )
+                        .toList();
+        System.out.println(result16);
+
+
         //employee salary > 30K -> increase by 10% using both filter and map
 
         //Numbers>10 -> square them
