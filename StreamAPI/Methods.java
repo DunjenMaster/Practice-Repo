@@ -156,9 +156,31 @@ public class Methods {
                         .toList();
         System.out.println(result13);
 
+        //Get length of each name
+        List<Integer> result14 =
+                names2.stream()
+                        .map(name -> name.length())
+                        .toList();
+        System.out.println(result14);
+
+        //Add Gst of 18%
+        List<Double> prices = List.of(100.0,250.0,500.50);
+        List<Double> result15 =
+                prices.stream()
+                        .map(p-> p+(p*0.18))
+                        .toList();
+        System.out.println(result15);
 
 
         //employee salary > 30K -> increase by 10% using both filter and map
+
+        //Numbers>10 -> square them
+        List<Integer> result =
+                num.stream()
+                        .filter(i -> i > 10)
+                        .map(i->i*i)
+                        .toList();
+        System.out.println(result);
 
         List<Employee> employees = List.of(
                 new Employee("Aman", 25000),
