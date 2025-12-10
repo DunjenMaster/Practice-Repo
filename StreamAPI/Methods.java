@@ -1,10 +1,33 @@
 package StreamAPI;
 
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Methods {
+
+    // Created this class to use the stream for better understanding of maps along with filter
+    static class Employee{
+        private String name;
+        private double salary;
+
+        public Employee(String name, double salary){
+            this.name = name;
+            this.salary = salary;
+        }
+
+        public String getName(){
+            return name;
+        }
+        public double getSalary(){
+            return salary;
+        }
+        @Override
+        public String toString(){
+            return "Employee{name='" + name + "', salary=" + salary + '}';
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -97,6 +120,64 @@ public class Methods {
                         .filter(e -> !e.startsWith("A"))
                         .toList();
         System.out.println(result9);
+
+
+
+        //==============================================================================================================================
+
+
+        // Use of map, when we have to transform/change the number given in the list
+
+        // Squaring the number in the list
+        List<Integer> number1 = List.of(2,4,5,6,7,8);
+        List<Integer> result10 = number1.stream().map(n -> n*n).toList();
+        System.out.println(result10);
+
+        // name starts with "A" convert it to upper case, first use filer because there is no need to change those which is not required.
+        List<String> result11 =
+                names.stream()
+                        .filter(name -> name.startsWith("A"))
+                        .map(name -> name.toUpperCase())
+                        .toList();
+        System.out.println(result11);
+
+
+        //Convert numbers to double their value, using above num list
+        List<Integer> result12 =
+                num.stream()
+                        .map(n -> n*2)
+                        .toList();
+        System.out.println(result12);
+
+        //Convert name to UPPERCASE, using names2 lost from above
+        List<String> result13 =
+                names2.stream()
+                        .map(name -> name.toUpperCase())
+                        .toList();
+        System.out.println(result13);
+
+
+
+        //employee salary > 30K -> increase by 10% using both filter and map
+
+        List<Employee> employees = List.of(
+                new Employee("Aman", 25000),
+                new Employee("Ravi", 40000),
+                new Employee("Neha", 32000),
+                new Employee("Sumit", 28000)
+        );
+
+        List<Employee> updatedSalary =
+                employees.stream()
+                        .filter(emp -> emp.getSalary() > 30000)
+                        //Note map decides the OUTPUT TYPE of the stream here it becomes Employee instead of Double because to get the employee name map uses new Employee (object of Employee in it)
+                        .map(emp -> new Employee(
+                                emp.getName(),
+                                emp.getSalary() * 1.10))
+                        .toList();
+
+        System.out.println(updatedSalary);
+
 
     }
 }
