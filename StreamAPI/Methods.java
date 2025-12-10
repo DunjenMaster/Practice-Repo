@@ -56,7 +56,7 @@ public class Methods {
                         .filter(e -> e.length()>12)
                         .collect(Collectors.toList());
         System.out.println(result1);
-        //result1.forEach(System.out::println);
+        result1.forEach(System.out::print);
 
         //Number greater than 10 in the list along with removal of duplicates and count how many duplicates will be removed
         List<Integer> num = List.of(5,34,6,3,5,3,45,5,67,6,5,435);
