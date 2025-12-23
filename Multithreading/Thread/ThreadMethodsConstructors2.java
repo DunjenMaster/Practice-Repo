@@ -1,4 +1,4 @@
-package Multithreading;
+package Multithreading.Thread;
 
 
 class MyThread3 extends Thread

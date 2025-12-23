@@ -1,4 +1,4 @@
-package Multithreading;
+package Multithreading.Thread;
 
 /**
  * The MyThread class extends the Thread class and overrides the run method.

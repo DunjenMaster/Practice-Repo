@@ -20,7 +20,7 @@
  * Note:
  * - This example highlights the importance of understanding thread behavior and the restrictions of the `join()` method.
  */
-package Multithreading;
+package Multithreading.Thread;
 
 class MyThread2 extends Thread {}
 

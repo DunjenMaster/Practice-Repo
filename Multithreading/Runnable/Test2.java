@@ -1,4 +1,4 @@
-package Multithreading;
+package Multithreading.Runnable;
 
 /**
  * Statement of Purpose (SOP)

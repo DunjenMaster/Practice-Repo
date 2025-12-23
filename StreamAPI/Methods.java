@@ -2,6 +2,7 @@ package StreamAPI;
 
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -39,7 +40,7 @@ public class Methods {
         // map(Function) this will return value to a new stream.
         /*
         each element operation
-        ex- if say we have a list and we want to square each elements present in it
+        ex- if say we have a list, and we want to square each elements present in it
         then map will return it
          */
 
@@ -207,6 +208,20 @@ public class Methods {
                         .toList();
 
         System.out.println(updatedSalary);
+
+
+
+        // ==================================================================================================================================================================================================================
+
+        // Square numbers -> unique square in a set
+        List<Integer> numbers = List.of(2,3,4,2,3,5);
+//        Set<Integer> squareUnique =
+//                numbers.stream()
+//                        .map(e -> );
+
+
+
+
 
 
     }
